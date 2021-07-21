@@ -5,8 +5,6 @@
   Mi nombre es Andres
 </div>
 
-<app-product></app-product>
-
 <button (click)="addItem()">Agregar</button>
 
 <ul>
@@ -19,7 +17,5 @@
 </ul>
 
 <div *ngFor='let product of products'>
-  {{ product.title }}
-  <img [src]="product.image" alt="">
-  {{ product.price }}
+  <app-product (productClicked)="clickOnProduct($event)" [product]="product"></app-product>
 </div>
