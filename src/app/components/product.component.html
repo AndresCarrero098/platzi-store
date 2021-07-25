@@ -1,4 +1,6 @@
-<h2>{{ product.title }}</h2>
+<h2>{{ product.title | uppercase }}</h2>
 <img [src]="product.image" alt="" />
-<strong>{{ product.price }}</strong>
+<strong>{{ product.price | currency }}</strong>
+<p>{{ product.description | slice:0:10 }}</p>
+<p>{{ today | date:'medium' }}</p>
 <button (click)="addToCart()">Agregar al carrito</button>
