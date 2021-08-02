@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, LayoutComponent],
   imports: [
     BrowserModule,
     FormsModule,
+    BrowserAnimationsModule,
     CoreModule,
     SharedModule,
     AppRoutingModule,

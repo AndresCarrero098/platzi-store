@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { SharedModule } from '../shared/shared.module';
 import { ProductRoutingModule } from './product-routing.module';
+import { MaterialModule } from '../material/material.module';
 
 import { ProductsComponent } from './components/products/products.component';
 import { ProductComponent } from './components/product/product.component';
@@ -10,6 +11,6 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 
 @NgModule({
   declarations: [ProductsComponent, ProductComponent, ProductDetailComponent],
-  imports: [CommonModule, SharedModule, ProductRoutingModule],
+  imports: [CommonModule, SharedModule, ProductRoutingModule, MaterialModule],
 })
 export class ProductModule {}
