@@ -10,14 +10,14 @@ import {
   OnDestroy,
 } from '@angular/core';
 
-import { Product } from '../product.model';
+import { Product } from '../../../core/models/product.model';
 
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss'],
 })
-export class ProductComponent implements OnInit, DoCheck, OnDestroy {
+export class ProductComponent implements OnInit, OnDestroy {
   @Input() product: Product;
   @Output() productClicked: EventEmitter<any> = new EventEmitter();
 
@@ -36,9 +36,9 @@ export class ProductComponent implements OnInit, DoCheck, OnDestroy {
     console.log('3. ngOnInit');
   }
 
-  ngDoCheck() {
-    console.log('4. ngDoCheck');
-  }
+  // ngDoCheck() {
+  //   console.log('4. ngDoCheck');
+  // }
 
   ngOnDestroy() {
     console.log('5. ngOnDestroy');
