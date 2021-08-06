@@ -6,6 +6,7 @@ import { MaterialModule } from '../material/material.module';
 
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CartComponent } from './components/cart/cart.component';
 
 import { ExponentialPipe } from './pipes/exponential/exponential.pipe';
 import { HighlightDirective } from './directives/highlight/highlight.directive';
@@ -14,6 +15,7 @@ import { HighlightDirective } from './directives/highlight/highlight.directive';
   declarations: [
     HeaderComponent,
     FooterComponent,
+    CartComponent,
     ExponentialPipe,
     HighlightDirective,
   ],
