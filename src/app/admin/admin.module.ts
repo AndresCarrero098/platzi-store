@@ -11,9 +11,10 @@ import { TableComponent } from './components/table/table.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProductsListComponent } from './components/products-list/products-list.component';
 import { NewProductComponent } from './components/new-product/new-product.component';
+import { EditProductComponent } from './components/edit-product/edit-product.component';
 
 @NgModule({
-  declarations: [NavComponent, ProductFormComponent, TableComponent, DashboardComponent, ProductsListComponent, NewProductComponent],
+  declarations: [NavComponent, ProductFormComponent, TableComponent, DashboardComponent, ProductsListComponent, NewProductComponent, EditProductComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
